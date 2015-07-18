@@ -79,22 +79,6 @@ nav {
     font-size: 38px;
 }
 
-.home-main-center,
-.home-sub-center,
-.social-center {
-    position: absolute;
-     /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-}
-.home-main-center {
-  position: absolute;
-  top: 45%;
-  width: 55%;
-}
-.home-sub-center {
-  top: 70%;
-  width: 55%;
-}
 
 
 .logo {
