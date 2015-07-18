@@ -1,0 +1,203 @@
+/*Global document structure*/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #f7f7f9;
+    color: #2c2c2c;
+    font-family: Berthold Akzidenz Grotesk BE;
+    letter-spacing: 1px;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#top,
+#bottom,
+#left,
+#right {
+    background: #2c2c2c;
+    position: fixed;
+    z-index: 1;
+}
+
+#left,
+#right {
+    top: 0;
+    bottom: 0;
+    width: 22px;
+}
+
+#left {
+    left: 0;
+}
+
+#right {
+    right: 0;
+}
+
+#top,
+#bottom {
+    left: 0;
+    right: 0;
+    height: 22px;
+}
+
+#top {
+    top: 0;
+}
+
+#bottom {
+    bottom: 0;
+}
+
+.col-md-4, .col-md-7, .col-md-5, .col-md-12, .col-md-12 {
+    padding: 0;
+}
+.info-left {
+  padding-right:20px;
+}
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+nav {
+    padding-top: 60px;
+}
+.nav-links {
+    padding: 50px;
+}
+.main-text {
+    font-size: 38px;
+}
+
+.home-main-center,
+.home-sub-center,
+.social-center {
+    position: absolute;
+     /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+.home-main-center {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 55%;
+}
+.home-sub-center {
+  top: 70%;
+  left: 50%;
+  width: 55%;
+}
+
+
+.logo {
+  width: 20px;
+  position: relative;
+  border-bottom: 4px solid #2c2c2c;
+  font-family: Jaapokki;
+}
+.logo h2 {
+  margin-bottom: 0;
+}
+
+a, a:hover {
+  color: #35B37B;
+  text-decoration: underline;
+}
+span {
+  color: #35B37B;
+}
+
+.test1 {
+  font-family: GT Walsheim;
+
+}
+.test2{
+  font-family: GT Walsheim;
+}
+
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  .main-text {
+    font-size: 30px;
+  }
+  a, .home-sub-center {
+/*    font-size: 10px;*/
+  }
+  .home-sub-center, .home-main-center {
+    width: 80%;
+  }
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+  .main-text {
+    font-size: 30px;
+  }
+  a, .home-sub-center {
+    font-size: 12px;
+  }
+  .test2,  .info-left{
+    padding-top: 50px;
+  }
+  .info-left {
+    padding-top: 40px;
+  }
+  .home-sub-center, .home-main-center {
+    width: 70%;
+  }
+
+
+
+}
+
+@media (min-width: 481px) and (max-width: 766px) {
+  
+  .main-text {
+    font-size: 25px;
+  }
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+  .main-text {
+  font-size: 25px;
+  }
+  a, .home-sub-center {
+    font-size: 12px;
+  }
+  .test2 {
+    padding-top:10px;
+  }
+  .home-sub-center, .home-main-center {
+    width: 80%;
+  }
+
+}
+
+
+
+
+
+
+
