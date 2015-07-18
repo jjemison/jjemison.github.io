@@ -89,12 +89,12 @@ nav {
 .home-main-center {
   position: absolute;
   top: 45%;
-/*  left: 50%;*/
+  left: 25%;
   width: 55%;
 }
 .home-sub-center {
   top: 70%;
-  left: 50%;
+  left: 25%;
   width: 55%;
 }
 
