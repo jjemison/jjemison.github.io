@@ -59,7 +59,7 @@ body {
     bottom: 0;
 }
 
-.col-md-4, .col-md-7, .col-md-5, .col-md-12, .col-md-12 {
+.col-md-4, .col-md-7, .col-md-8, .col-md-5, .col-md-12, .col-md-12 {
     padding: 0;
 }
 .info-left {
@@ -99,13 +99,8 @@ span {
   color: #35B37B;
 }
 
-.test1 {
+.test1, .test2 {
   font-family: GT Walsheim;
-
-}
-.test2{
-  font-family: GT Walsheim;
-}
 
 
 /* Landscape tablets and medium desktops */
@@ -121,9 +116,6 @@ span {
   }
   a, .home-sub-center {
 /*    font-size: 10px;*/
-  }
-  .home-sub-center, .home-main-center {
-    width: 80%;
   }
 
 }
@@ -142,9 +134,6 @@ span {
   }
   .info-left {
     padding-top: 40px;
-  }
-  .home-sub-center, .home-main-center {
-    width: 70%;
   }
 
 
@@ -170,9 +159,6 @@ span {
   }
   .test2 {
     padding-top:10px;
-  }
-  .home-sub-center, .home-main-center {
-    width: 80%;
   }
 
 }
