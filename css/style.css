@@ -1,6 +1,9 @@
 /*Global document structure*/
 
-
+@font-face {
+  font-family: "main font";
+  src: url('/fonts/Berthold Akzidenz Grotesk BE Bold.otf') format('truetype');
+}
 html, body {
     position: relative;
     height: 100%;
@@ -8,7 +11,7 @@ html, body {
     margin: 0;
     background-color: #f7f7f9;
     color: #2c2c2c;
-    font-family: Berthold Akzidenz Grotesk BE;
+    font-family: "main font",Helvetica,Arial,sans-serif;;
     letter-spacing: 1px;
 }
 .container {
@@ -28,7 +31,7 @@ html, body {
 }
 
 .logo {
-  font-family: Jaapokki;
+  font-family: Jaapokki-Regular;
   border-bottom: 3px solid black;
   width: 15px;
   margin: 0 auto;
