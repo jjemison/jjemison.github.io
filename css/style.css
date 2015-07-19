@@ -1,94 +1,70 @@
 /*Global document structure*/
 
-html {
-    position: relative;
-    min-height: 100%;
-}
 
-html,
-body {
+html, body {
+    position: relative;
     height: 100%;
+    width: 100%;
     margin: 0;
     background-color: #f7f7f9;
     color: #2c2c2c;
     font-family: Berthold Akzidenz Grotesk BE;
     letter-spacing: 1px;
 }
-
-.container-fluid {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-#top,
-#bottom,
-#left,
-#right {
-    background: #2c2c2c;
-    position: fixed;
-    z-index: 1;
-}
-
-#left,
-#right {
-    top: 0;
-    bottom: 0;
-    width: 22px;
-}
-
-#left {
-    left: 0;
-}
-
-#right {
-    right: 0;
-}
-
-#top,
-#bottom {
-    left: 0;
-    right: 0;
-    height: 22px;
-}
-
-#top {
-    top: 0;
-}
-
-#bottom {
-    bottom: 0;
-}
-
-.col-md-4, .col-md-7, .col-md-8, .col-md-5, .col-md-12, .col-md-12 {
-    padding: 0;
-}
-
-.info-left {
-  padding-right:20px;
+.container {
+  overflow: hidden;
+  border: 22px solid #2c2c2c;
+  height:100%;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 .row {
     margin-right: 0;
     margin-left: 0;
 }
-nav {
-    padding-top: 60px;
-}
-.nav-links {
-    padding: 50px;
-}
-.main-text {
-    font-size: 38px;
+.col-sm-4, .col-sm-6, .col-sm-8, .col-sm-12, .col-md-12 {
+    padding: 0;
 }
 
 .logo {
-  width: 20px;
-  position: relative;
-  border-bottom: 4px solid #2c2c2c;
   font-family: Jaapokki;
+  border-bottom: 3px solid black;
+  width: 15px;
+  margin: 0 auto;
+  padding-top: 15px;
 }
-.logo h2 {
-  margin-bottom: 0;
+
+.table-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
+
+.table-sub-container {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  text-align: left;
+  padding-left: 30px;
+}
+.main-section {
+    font-size: 2em;
+    padding-bottom: 30px;
+}
+
+.bottom-section {
+  font-family: Gotham;
+  font-size: .85em;
+  padding-top: 20px;
+} 
+
+.info-left {
+  padding-right:20px;
+}
+
 
 a, a:hover {
   color: #35B37B;
@@ -98,75 +74,38 @@ span {
   color: #35B37B;
 }
 
-.me {
-  position: absolute;
-  top:35%;
-}
 
+  /* Large Devices, Wide Screens */
+  @media only screen and (max-width : 1200px) {
 
-.test1, .test2 {
-  font-family: GT Walsheim;
-
-
-/* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
-  
-  .main-text {
-    font-size: 30px;
-  }
-  a, .home-sub-center {
-/*    font-size: 10px;*/
   }
 
-}
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width : 992px) {
 
-/* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-
-  .main-text {
-    font-size: 30px;
-  }
-  a, .home-sub-center {
-    font-size: 12px;
-  }
-  .test2,  .info-left{
-    padding-top: 50px;
-  }
-  .info-left {
-    padding-top: 40px;
   }
 
-
-
-}
-
-@media (min-width: 481px) and (max-width: 766px) {
-  
-  .main-text {
-    font-size: 25px;
+  /* Small Devices, Tablets */
+  @media only screen and (max-width : 768px) {
+        .main-section {
+    font-size: 1em;
+    }
   }
 
-}
-
-/* Portrait phones and smaller */
-@media (max-width: 480px) {
-
-  .main-text {
-  font-size: 25px;
-  }
-  a, .home-sub-center {
-    font-size: 12px;
-  }
-  .test2 {
-    padding-top:10px;
+  /* Extra Small Devices, Phones */ 
+  @media only screen and (max-width : 480px) {
+    .main-section {
+    font-size: 1em;
+    }
   }
 
-}
+  /* Custom, iPhone Retina */ 
+  @media only screen and (max-width : 320px) {
+    .main-section {
+    font-size: 1em;
+    }
+
+  }
 
 
 
