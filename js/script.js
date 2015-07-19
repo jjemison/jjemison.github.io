@@ -8,6 +8,6 @@ $(document).ready(function(){
     fullWindow: 'contain'
   });
 
-  $('.hidden').fadeIn(2000).removeClass('hidden');
+  $('.hidden').fadeIn(3000).removeClass('hidden');
 
 });
