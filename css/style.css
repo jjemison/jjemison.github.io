@@ -4,6 +4,14 @@
   font-family: "main font";
   src: url('/fonts/Berthold Akzidenz Grotesk BE Bold.otf') format('truetype');
 }
+@font-face {
+  font-family: "logo";
+  src: url('/fonts/Jaapokki-Regular.otf') format('truetype');
+}
+@font-face {
+  font-family: "bottom section";
+  src: url('/fonts/Gotham Medium.otf') format('truetype');
+}
 html, body {
     position: relative;
     height: 100%;
@@ -11,7 +19,7 @@ html, body {
     margin: 0;
     background-color: #f7f7f9;
     color: #2c2c2c;
-    font-family: "main font",Helvetica,Arial,sans-serif;;
+    font-family: "main font",Helvetica,Arial,sans-serif;
     letter-spacing: 1px;
 }
 .container {
@@ -31,7 +39,7 @@ html, body {
 }
 
 .logo {
-  font-family: Jaapokki-Regular;
+  font-family: "logo",Helvetica,Arial,sans-serif;
   border-bottom: 3px solid black;
   width: 15px;
   margin: 0 auto;
@@ -61,7 +69,7 @@ html, body {
 }
 
 .bottom-section {
-  font-family: Gotham;
+  font-family: "bottom section",Helvetica,Arial,sans-serif;
   font-size: .85em;
   padding-top: 20px;
   line-height: 2em;
