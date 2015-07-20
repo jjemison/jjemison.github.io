@@ -13,14 +13,14 @@
   src: url('/fonts/Gotham Medium.otf') format('truetype');
 }
 html, body {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    background-color: #f7f7f9;
-    color: #2c2c2c;
-    font-family: "main font",Helvetica,Arial,sans-serif;
-    letter-spacing: 1px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #f7f7f9;
+  color: #2c2c2c;
+  font-family: "main font",Helvetica,Arial,sans-serif;
+  letter-spacing: 1px;
 }
 .container {
   overflow: hidden;
@@ -31,11 +31,11 @@ html, body {
   padding-right: 0;
 }
 .row {
-    margin-right: 0;
-    margin-left: 0;
+  margin-right: 0;
+  margin-left: 0;
 }
 .col-sm-4, .col-sm-6, .col-sm-8, .col-sm-12, .col-md-12 {
-    padding: 0;
+  padding: 0;
 }
 
 .logo {
@@ -64,8 +64,8 @@ html, body {
 }
 
 .main-section {
-    font-size: 2em;
-    padding-bottom: 50px;
+  font-size: 2em;
+  padding-bottom: 50px;
 }
 
 .bottom-section {
@@ -81,58 +81,61 @@ html, body {
 
 
 a, a:hover {
-  color: #35B37B;
+  color: #173AEF;
   text-decoration: underline;
 }
+a:visited {
+  color: #173AEF;
+}
 span {
-  color: #35B37B;
+  color: #173AEF;
 }
 
 
 
   /* Large Devices, Wide Screens */
-  @media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1200px) {
     
   }
 
   /* Medium Devices, Desktops */
-  @media only screen and (max-width : 992px) {
+@media only screen and (max-width : 992px) {
 
   }
 
   /* Small Devices, Tablets */
-  @media only screen and (max-width : 768px) {
-    .table-container {
-      max-width: 600px;
-      }
-
+@media only screen and (max-width : 768px) {
+  .table-container {
+    max-width: 600px;
   }
 
-  /* Extra Small Devices, Phones */ 
-  @media only screen and (max-width : 480px) {
-    .main-section {
-      font-size: 1.2em;
-      padding-bottom: 5px;
-    }
-    .bottom-section {
-      font-size: .65em;
-      padding-top: 10px;
-    } 
-  }
+}
 
-  /* Custom, iPhone Retina */ 
-  @media only screen and (max-width : 320px) {
-    .main-section {
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+  .main-section {
+    font-size: 1.2em;
+    padding-bottom: 5px;
+  }
+  .bottom-section {
+    font-size: .65em;
+    padding-top: 10px;
+  } 
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+  .main-section {
     font-size: 1.2em;
     padding-bottom: 0px;
-    }
-    .bottom-section {
-      font-size: .65em;
-      padding-top: 10px;
-      line-height: 1.7em;
-    } 
-
   }
+  .bottom-section {
+    font-size: .65em;
+    padding-top: 10px;
+    line-height: 1.7em;
+  } 
+
+}
 
 
 
