@@ -18,12 +18,12 @@
                 addClass: '',
 
                 closable: true,
-                loop: true,
+                loop: false,
                 auto: false,
                 pause: 4000,
                 escKey: true,
                 controls: true,
-                hideControlOnEnd: false,
+                hideControlOnEnd: true,
 
                 preload: 1, //number of preload slides. will exicute only after the current slide is fully loaded. ex:// you clicked on 4th image and if preload = 1 then 3rd slide and 5th slide will be loaded in the background after the 4th slide is fully loaded.. if preload is 2 then 2nd 3rd 5th 6th slides will be preloaded.. ... ...
                 showAfterLoad: true,
@@ -36,7 +36,7 @@
                 counter: false,
 
                 exThumbImage: false,
-                thumbnail: true,
+                thumbnail: false,
                 showThumbByDefault: false,
                 animateThumb: true,
                 currentPagerPosition: 'middle',
@@ -436,7 +436,7 @@
                     }
                     $gallery.append('<div class="thumb-cont"><div class="thumb-info">' + $close + '</div><div class="thumb-inner"></div></div>');
                     $thumb_cont = $gallery.find('.thumb-cont');
-                    $prev.after('<a class="cl-thumb"></a>');
+                    // $prev.after('<a class="cl-thumb"></a>');
                     $prev.parent().addClass('has-thumb');
                     $gallery.find('.cl-thumb').bind('click touchend', function () {
                         $gallery.addClass('open');
