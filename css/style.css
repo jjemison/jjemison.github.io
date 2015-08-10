@@ -33,11 +33,15 @@ img {
 a, a:hover {
   color: #000;
 }
-a, a:visited, a:active {
+a {
+  text-decoration: underline;
+}
+a:visited, a:active {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: line-through;
+  text-decoration: underline;
+  color: #7F7E7E;
 }
 .container {
   position: relative;
@@ -93,7 +97,9 @@ a:hover {
 .resume-img {
   padding-top: 100px;
 }
-
+.logo {
+  color: #7F7E7E;
+}
 
 
   /* Large Devices, Wide Screens */
