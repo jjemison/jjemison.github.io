@@ -19,16 +19,19 @@ html, body {
 h3,h6,h4,h5 {
   font-family: "headers",Helvetica,Arial,sans-serif;
 }
-h6 {
+h6,h5 {
   color: #5c5c5c;
 }
 p {
   font-family: "text",Helvetica,Arial,sans-serif;
+  margin: 0 0 50px;
 }
 img {
   margin: 0 auto;
-  padding-bottom: 40px;
-  padding-top: 10px;
+  margin-bottom: 50px;
+  -moz-box-shadow: 0 0 7px #b2b2b2;
+ -webkit-box-shadow: 0 0 7px #b2b2b2;
+ box-shadow: 0px 0px 7px #b2b2b2;
 }
 a, a:hover {
   color: #000;
@@ -42,6 +45,9 @@ a:visited, a:active {
 a:hover {
   text-decoration: underline;
   color: #7F7E7E;
+}
+h3 {
+  margin-top: 0;
 }
 .container {
   position: relative;
@@ -74,19 +80,21 @@ a:hover {
   float:none;
 }
 .cool-img {
-  padding-bottom:0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom:50px;
 }
 .mission-text {
   font-size: 28px;
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .resume-text {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 .bottom-spacing {
-  padding-bottom: 25px;
+  margin-bottom: 50px;
 }
 .footer {
    position:absolute;
@@ -100,7 +108,13 @@ a:hover {
 .logo {
   color: #7F7E7E;
 }
+.cool-img2 {
+  margin-bottom: 0;
+}
+.style-guide {
+  box-shadow: 0px 0px 0px ;
 
+}
 
   /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
