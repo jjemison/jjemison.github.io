@@ -79,6 +79,7 @@ h3 {
 .center-row {
   display:table;
   height: 100%;
+  width: 100%;
 }
 .center {
   display:table-cell;
