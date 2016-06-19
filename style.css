@@ -1,0 +1,159 @@
+html, body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  letter-spacing: 1px;
+  padding:0;
+}
+body {
+  background: #292B36;
+  font-family:'Droid Sans Mono', monospace;
+}
+h1 {
+ position:relative;
+  font-size: 2.5vw;
+  color: white;
+  &:after {
+    content: '';
+    height: 140%;
+    width: 1px;
+    background: transparent;
+    position: absolute;
+    display:block;
+    right:-1vw;
+    top:-20%;
+    animation:blink 1.2s linear infinite;
+  }
+}
+h2 {
+  margin-top:5%;
+  font-size:2.5vw;
+  color:#59B75C;
+}
+a, a:hover, a:visited, a:active, a:link{
+  text-decoration: none;
+}
+a:link{
+  color: #DB3E41;
+}
+a:hover, a:active {
+  color: #fff;
+}
+li {
+  display: inline-block;
+  font-size:2.5vw;
+  color:#DB3E41;
+  margin:0 0 10px;
+}
+.container {
+  position: relative;
+  overflow: hidden;
+  height:100%;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.center-row {
+  display:table;
+  height: 100%;
+  width: 100%;
+}
+.center {
+  display:table-cell;
+  vertical-align:middle;
+  float:none;
+}
+.footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+}
+.sliding-middle-out {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+  color: #DB3E41;
+}
+.sliding-middle-out:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+  width: 100%;
+  background: #fff;
+}
+.learnmore {
+  color: #fff;
+}
+.elements {
+  color: #75AFF3;
+}
+.colon, .simicolon, .bracket {
+  color: #fff;
+}
+.elementName {
+  color: #E5D408;
+}
+
+ @-webkit-keyframes typing { from { width: 0; } }
+ @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+ .text-blinking {
+  border-right: .1em solid #fff;
+  width: calc(0.55em * 38); 
+  width: 38ch;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 4s steps(38, end),
+    blink-caret .5s step-end infinite alternate;
+ }
+
+
+
+
+  /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    
+  }
+
+  /* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+  }
+
+  /* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+ .text-blinking {
+   width: 42ch;
+ }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+
+}
+
+
+
+
+
+
+
